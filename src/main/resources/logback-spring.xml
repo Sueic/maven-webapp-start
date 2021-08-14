@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <!--log文件目录-->
-    <property name="LOG_PATH" value="/export/logs/test"/>
+    <property name="LOG_PATH" value="/export/logs/testt"/>
 
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
