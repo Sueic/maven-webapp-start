@@ -31,6 +31,15 @@
             <groupId>javax.servlet</groupId>
             <artifactId>jstl</artifactId>
         </dependency>
+
+        <!--本地依赖-->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>20.0</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/guava-20.0.jar</systemPath>
+        </dependency>
     </dependencies>
 
 
@@ -92,6 +101,18 @@
                 <!-- 指定源文件夹中的哪些资源需要进行编译 -->
                 <includes>
                     <include>**/*</include>
+                </includes>
+            </resource>
+
+
+            <resource>
+                <!-- 源文件夹 -->
+                <directory>${project.basedir}/lib</directory>
+                <!-- 指定编译到的路径-->
+                <targetPath>/lib/</targetPath>
+                <!-- 指定源文件夹中的哪些资源需要进行编译 -->
+                <includes>
+                    <include>*.jar</include>
                 </includes>
             </resource>
         </resources>
