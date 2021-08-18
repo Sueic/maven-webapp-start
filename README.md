@@ -1,4 +1,4 @@
 # maven-webapp-start
 maven-webapp-start
 
-app
+SpringBoot jsp maven logback local-lib
